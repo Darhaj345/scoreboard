@@ -1,8 +1,43 @@
 body {
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: darkcyan;
 }
 
 .container {
+    border-radius: 35px;
+    background-color: aqua;
     display: flex;
     justify-content: space-around;
+    width: 600px;
 }
+
+
+button {
+    margin: 5px;
+    border-radius: 80px;
+    width: 50px;
+    border-width: 5px;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#hScore, #gScore {
+    display: flex;
+    justify-content: center;
+
+    color: #F94F6D;
+    background: black;
+    
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    width: 120px;   
+}
+

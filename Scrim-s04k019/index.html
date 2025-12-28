@@ -1,16 +1,51 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+    <title>Document</title>
+</head>
+
+<body>
         <div class="container">
+
+            <!-- Home Score -->
+
             <div>
                 <h3>HOME</h3>
+
+                <div id="home-score-container">
+                    <p id="hScore">0</p>
+                </div>
+
+                <div id="home-buttons">
+                    <button id="hButton1" onclick="hAdd1()">+1</button>
+                    <button id="hButton2" onclick="hAdd2()">+2</button>
+                    <button id="hButton3" onclick="hAdd3()">+3</button>
+                </div>
             </div>
+
+            <!-- Guest Score -->
+
             <div>
                 <h3>GUEST</h3>
+
+                <div id="guest-score-container">
+                    <p id="gScore">0</p>
+                </div>
+
+                <div id="guest-buttons">
+                    <button id="gButton1" onclick="gAdd1()">+1</button>
+                    <button id="gButton2" onclick="gAdd2()">+2</button>
+                    <button id="gButton3" onclick="gAdd3()">+3</button>
+                </div>
             </div>
+
         </div>
+
+        <!-- The compiler runs the program from top-to-bottom: does it matter where you put the links? -->
         <script src="index.js"></script>
-    </body>
+
+</body>
 </html>
