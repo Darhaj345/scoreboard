@@ -1,38 +1,37 @@
-// getElementById ONLY retrieves the element itself, not the content it stores.
-let hScore = document.getElementById("hScore");
-let gScore = document.getElementById("gScore");
-let homeScore = 0;
-let guestScore = 0;
+let hScore = document.getElementById("h-score");
+let gScore = document.getElementById("g-score");
 
-// Home Buttons
-function hAdd1() {
-    homeScore += 1;
-    hScore.textContent = homeScore;
+let scoreTotal = 0;
+let gScoreTotal = 0;
+
+let hScoreConsole = hScore.textContent;
+
+function add1() {
+  scoreTotal += 1;
+  hScore.textContent = scoreTotal;
 }
 
-function hAdd2() {
-    homeScore += 2;
-    hScore.textContent = homeScore;
+function add2() {
+  scoreTotal += 2;
+  hScore.textContent = scoreTotal;
 }
 
-function hAdd3() {
-    homeScore += 3;
-    hScore.textContent = homeScore;
+function add3() {
+  scoreTotal += 3;
+  hScore.textContent = scoreTotal;
 }
 
-// Away Buttons
 function gAdd1() {
-    guestScore += 1;
-    gScore.textContent = guestScore;
+  gScoreTotal += 1;
+  gScore.textContent = gScoreTotal;
 }
 
 function gAdd2() {
-    guestScore += 2;
-    gScore.textContent = guestScore;
+  gScoreTotal += 2;
+  gScore.textContent = gScoreTotal;
 }
 
 function gAdd3() {
-    guestScore += 3;
-    gScore.textContent = guestScore;
+  gScoreTotal += 3;
+  gScore.textContent = gScoreTotal;
 }
-

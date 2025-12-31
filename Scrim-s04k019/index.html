@@ -1,51 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Scoreboard</title>
 </head>
-
 <body>
-        <div class="container">
-
-            <!-- Home Score -->
-
-            <div>
-                <h3>HOME</h3>
-
-                <div id="home-score-container">
-                    <p id="hScore">0</p>
-                </div>
-
-                <div id="home-buttons">
-                    <button id="hButton1" onclick="hAdd1()">+1</button>
-                    <button id="hButton2" onclick="hAdd2()">+2</button>
-                    <button id="hButton3" onclick="hAdd3()">+3</button>
-                </div>
-            </div>
-
-            <!-- Guest Score -->
-
-            <div>
-                <h3>GUEST</h3>
-
-                <div id="guest-score-container">
-                    <p id="gScore">0</p>
-                </div>
-
-                <div id="guest-buttons">
-                    <button id="gButton1" onclick="gAdd1()">+1</button>
-                    <button id="gButton2" onclick="gAdd2()">+2</button>
-                    <button id="gButton3" onclick="gAdd3()">+3</button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- The compiler runs the program from top-to-bottom: does it matter where you put the links? -->
-        <script src="index.js"></script>
-
+  <div id="container">
+    <div id="home-board">
+      <h1>Home</h1>
+      <h2 id="h-score">0</h2>
+      <button onclick=add1() id="h-button1">+1</button>
+      <button onclick=add2() id="h-button2">+2</button>
+      <button onclick=add3() id="h-button3">+3</button>
+    </div>
+    <div id="guest-board">
+      <h1>Guest</h1>
+      <h2 id="g-score">0</h2>
+      <button onclick=gAdd1() id="g-button1">+1</button>
+      <button onclick=gAdd2() id="g-button2">+2</button>
+      <button onclick=gAdd3() id="g-button3">+3</button>
+    </div>
+  </div>
 </body>
 </html>
